@@ -1,3 +1,6 @@
 [submodule "submodules/ch_frb_l1"]
 	path = submodules/ch_frb_l1
 	url = https://github.com/kmsmith137/ch_frb_l1
+[submodule "submodules/ch_frb_L1b"]
+	path = submodules/ch_frb_L1b
+	url = git@github.com:CHIMEFRB/ch_frb_L1b.git
