@@ -7,3 +7,6 @@
 [submodule "submodules/bonsai"]
 	path = submodules/bonsai
 	url = git@github.com:CHIMEFRB/bonsai.git
+[submodule "submodules/simd_helpers"]
+	path = submodules/simd_helpers
+	url = https://github.com/kmsmith137/simd_helpers
