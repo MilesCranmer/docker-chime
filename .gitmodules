@@ -4,3 +4,6 @@
 [submodule "submodules/ch_frb_L1b"]
 	path = submodules/ch_frb_L1b
 	url = git@github.com:CHIMEFRB/ch_frb_L1b.git
+[submodule "submodules/bonsai"]
+	path = submodules/bonsai
+	url = git@github.com:CHIMEFRB/bonsai.git
