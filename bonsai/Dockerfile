@@ -1,4 +1,4 @@
-FROM chime-simd-helpers
+FROM chime-sp-hdf5
 
 # Dependency downloads
 RUN apt-get update && apt-get install -qqy libhdf5-dev && \
