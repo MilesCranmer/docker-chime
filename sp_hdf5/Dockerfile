@@ -5,7 +5,7 @@ RUN mkdir hdf5-src && wget 'ftp://support.hdfgroup.org/HDF5/current/src/hdf5*.ta
     tar xzf hdf*.tar.gz && \
     cd hdf5* && \
     mkdir /usr/local/hdf5 && \
-    ./configure --enable-cxx --prefix=/usr/local/hdf5 && \
+    ./configure --enable-cxx --prefix=/usr/local && \
     make -j4 && \
     make install
 
@@ -19,6 +19,6 @@ COPY sp_hdf5/Makefile.local /tmp/sp_hdf5/
 
 #RUN make test && make install
 
-WORKDIR /workspace
+WORKDIR /tmp/sp_hdf5
 
 
