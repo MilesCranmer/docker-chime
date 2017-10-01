@@ -13,3 +13,6 @@
 [submodule "submodules/sp_hdf5"]
 	path = submodules/sp_hdf5
 	url = https://github.com/kmsmith137/sp_hdf5
+[submodule "submodules/ch_frb_io"]
+	path = submodules/ch_frb_io
+	url = https://github.com/CHIMEFRB/ch_frb_io
