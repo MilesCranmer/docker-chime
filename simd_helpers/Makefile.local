@@ -1,2 +1,2 @@
 INCDIR = /usr/local/include
-CPP = $(CXX) -std=c++11 -Wall -O3 -march=native
+CPP = $(CXX) -std=c++11 -Wall -O3 -march=native -I/usr/local/include -L/usr/local/lib
