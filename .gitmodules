@@ -19,3 +19,9 @@
 [submodule "submodules/bitshuffle"]
 	path = submodules/bitshuffle
 	url = https://github.com/kiyo-masui/bitshuffle
+[submodule "submodules/rf_pipelines"]
+	path = submodules/rf_pipelines
+	url = https://github.com/kmsmith137/rf_pipelines
+[submodule "submodules/simpulse"]
+	path = submodules/simpulse
+	url = https://github.com/kmsmith137/simpulse
