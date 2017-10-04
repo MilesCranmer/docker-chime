@@ -18,6 +18,8 @@ COPY sp_hdf5/Makefile.local /tmp/sp_hdf5/
 
 RUN make all && make install
 
+ADD sp_hdf5/hdf5.pc /usr/local/lib/pkgconfig/
+
 WORKDIR /workspace
 
 
