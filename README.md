@@ -19,9 +19,14 @@ Since docker containers are built sequentially, this container is packaged up as
 
 1. chime-base
     - Contains my personal development docker on the Ubuntu 16.04 base. Be wary that ; and : are swapped in vim.
-2. ^ chime-simd-helpers
+2. chime-simd-helpers
     - Builds simd_helpers on top of this.
-3. ^ ^ chime-sp-hdf5
-    - Builds sp_hdf5 on top of the above.
-4. ^ ^ ^ chime-bonsai
-    - Builds Bonsai on top of the previous images.
+3. chime-sp-hdf5
+4. chime-bitshuffle
+    - Also builds deps for numpy, cython, h5py
+    - Depends only on the hdf5 built above
+5. chime-bonsai
+    - Depends on bitshuffle
+6. chime-ch-frb-io
+    - Depends on hdf5, bitshuffle
+    - Also depends on some others

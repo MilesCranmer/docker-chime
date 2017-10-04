@@ -5,4 +5,5 @@ PYDIR = /usr/lib/python
 HAVE_HDF5 = y
 HAVE_PNG = y
 HAVE_SIMPULSE = n
-CPP = $(CXX) -std=c++11 -Wall -O3 -march=native -ffast-math -funroll-loops -pthread -fPIC -L. -I/usr/include/python2.7 -I/usr/local/lib/python2.7/dist-packages/numpy/core/include/
+CPP = $(CXX) -std=c++11 -Wall -O3 -march=native -ffast-math -funroll-loops -pthread -fPIC -L. -I. -I/usr/include/python2.7 -I/usr/local/lib/python2.7/dist-packages/numpy/core/include/
+CPP_LFLAGS=-L. -L$(LIBDIR)
