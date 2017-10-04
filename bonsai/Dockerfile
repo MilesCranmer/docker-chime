@@ -1,7 +1,4 @@
-FROM chime-sp-hdf5
-
-# Dependency downloads
-RUN pip install Cython numpy
+FROM chime-bitshuffle
 
 ADD submodules/bonsai /tmp/bonsai
 
