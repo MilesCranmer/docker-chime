@@ -25,8 +25,11 @@ Since docker containers are built sequentially, this container is packaged up as
 4. chime-bitshuffle
     - Also builds deps for numpy, cython, h5py
     - Depends only on the hdf5 built above
-5. chime-bonsai
+5. chime-simpulse
+6. chime-bonsai
     - Depends on bitshuffle
-6. chime-ch-frb-io
+7. chime-ch-frb-io
     - Depends on hdf5, bitshuffle
     - Also depends on some others
+8. chime-rf-pipelines
+9. chime-ch-frb-l1
