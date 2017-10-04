@@ -2,8 +2,8 @@ docker build -t chime-base -f Dockerfile .
 docker build -t chime-simd-helpers -f simd_helpers/Dockerfile .
 docker build -t chime-sp-hdf5 -f sp_hdf5/Dockerfile .
 docker build -t chime-bitshuffle -f bitshuffle/Dockerfile .
+docker build -t chime-simpulse  -f simpulse/Dockerfile .
 docker build -t chime-bonsai -f bonsai/Dockerfile .
 docker build -t chime-ch-frb-io -f ch_frb_io/Dockerfile .
-docker build -t chime-simpulse  -f simpulse/Dockerfile .
 docker build -t chime-rf-pipelines -f rf_pipelines/Dockerfile .
-#docker build -t chime-ch-frb-l1 -f ch_frb_l1/Dockerfile .
+docker build -t chime-ch-frb-l1 -f ch_frb_l1/Dockerfile .

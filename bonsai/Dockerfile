@@ -1,4 +1,4 @@
-FROM chime-bitshuffle
+FROM chime-simpulse
 
 ADD submodules/bonsai /tmp/bonsai
 

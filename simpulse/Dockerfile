@@ -1,4 +1,4 @@
-FROM chime-ch-frb-io
+FROM chime-bitshuffle
 
 # Dependencies
 RUN apt-get update && apt-get install -qqy libfftw3-dev

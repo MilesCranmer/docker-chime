@@ -1,4 +1,4 @@
-FROM chime-simpulse
+FROM chime-ch-frb-io
 
 #Dependencies
 RUN pip install scipy Pillow
