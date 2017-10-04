@@ -16,3 +16,6 @@
 [submodule "submodules/ch_frb_io"]
 	path = submodules/ch_frb_io
 	url = https://github.com/CHIMEFRB/ch_frb_io
+[submodule "submodules/bitshuffle"]
+	path = submodules/bitshuffle
+	url = https://github.com/kiyo-masui/bitshuffle
