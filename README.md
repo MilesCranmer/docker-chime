@@ -1,7 +1,11 @@
 # docker-chime
 Docker container for the entire CHIME software stack.
 
-Note that some of the submodules are private. You will need access to build this container.
+Note that some of the submodules are private. You will need access to build this container. Check out everything with
+
+```
+git submodule update --init --recursive
+```
 
 Build everything with
 ```
@@ -11,9 +15,9 @@ inside the repo root.
 
 Then, run with
 ```
-docker run -it --rm chime-...
+docker run -it --rm chime-ch-frb-l1
 ```
-Where ... is the level of software you wish to run.
+Or, `chime-...`, Where ... is the level of software you wish to run (e.g., `rf-pipelines`).
 
 Since docker containers are built sequentially, this container is packaged up as follows:
 
@@ -33,3 +37,5 @@ Since docker containers are built sequentially, this container is packaged up as
     - Also depends on some others
 8. chime-rf-pipelines
 9. chime-ch-frb-l1
+
+You can read the Dockerfiles in each folder to see the specific build step each commands go through.
