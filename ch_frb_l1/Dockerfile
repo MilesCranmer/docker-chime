@@ -11,6 +11,6 @@ RUN [ ! -f /tmp/ch_frb_l1/Makefile.local ] || rm /tmp/ch_frb_l1/Makefile.local
 
 COPY ch_frb_l1/Makefile.local /tmp/ch_frb_l1/
 
-#RUN make all install
+RUN make all install
 
 WORKDIR /workspace
