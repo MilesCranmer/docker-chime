@@ -7,3 +7,4 @@ docker build -t chime-bonsai -f bonsai/Dockerfile .
 docker build -t chime-ch-frb-io -f ch_frb_io/Dockerfile .
 docker build -t chime-rf-pipelines -f rf_pipelines/Dockerfile .
 docker build -t chime-ch-frb-l1 -f ch_frb_l1/Dockerfile .
+docker build -t chime-ch-frb-l1b -f ch_frb_l1b/Dockerfile .
