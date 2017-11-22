@@ -1,6 +1,6 @@
 FROM chime-ch-frb-l1
 
-ENV PYTHONPATH=$PYTHONPATH:/usr/local/python:/usr/local/python2.7
+ENV PYTHONPATH=$PYTHONPATH:/usr/local/python:/usr/local/python2.7:/usr/lib/python
 
 RUN pip install scikit-learn msgpack-python
 
