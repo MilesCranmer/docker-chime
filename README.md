@@ -37,5 +37,30 @@ Since docker containers are built sequentially, this container is packaged up as
     - Also depends on some others
 8. chime-rf-pipelines
 9. chime-ch-frb-l1
+10. chime-ch-frb-l1b
 
 You can read the Dockerfiles in each folder to see the specific build step each commands go through.
+
+
+## Setting up a network
+
+To set up a network for two docker containers to talk to eachother, write:
+
+```
+docker network create --subnet=172.18.0.0/16 mynet
+```
+
+Then, 
+
+```
+docker run -it --net mynet --ip 172.18.0.21 chime-ch-frb-l1b
+```
+
+And,
+
+
+```
+docker run -it --net mynet --ip 172.18.0.22 chime-ch-frb-l1b
+```
+
+Will set up two containers that can ping eachother.
